@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Angular App</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li *ngFor="let menu of menudata" routerLinkActive="active">
+        <a [routerLink]="menu.route">{{menu.menuName}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

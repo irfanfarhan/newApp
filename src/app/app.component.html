@@ -1,0 +1,6 @@
+<app-nav-bar [menudata]="menudata" (dataSend)="eventBinding($event)"></app-nav-bar>
+<div class="container">
+  {{selectedRoute}}
+  <router-outlet></router-outlet>
+</div>
+
